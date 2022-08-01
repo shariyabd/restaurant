@@ -1,0 +1,735 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lato', sans-serif;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*==============================
+ home section start here 
+================================ */
+.home-bg{
+    background: url('img/home.png') no-repeat;
+    background-size: cover;
+    padding: 0px 0px 100px 0px;
+    width: 100%;
+    height: auto;
+}
+
+/*=========================
+ navbar section start here 
+============================ */
+.home-bg nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 30px;
+}
+
+.home-bg nav .logo{
+    padding: 15px 5px;
+}
+.home-bg nav .nav-item li{
+    display: inline-flex;
+    list-style: none;
+    
+}
+.home-bg nav .nav-item li a{
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    
+}
+.home-bg nav .nav-item li a:hover{
+    color: white;
+    background: #e8565e;
+    transition: .5s all ease;
+}
+.side-bar{
+    display: none;
+}
+
+/*============================
+ navbar section end here 
+============================= */
+
+
+.home-bg .home-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 45%;
+    margin: 0 auto;
+    padding-top: 40px;
+    text-align: center;
+}
+
+.home-bg .home-text .home-head h1{
+    font-size: 150px;
+    font-weight: 600;
+    font-family: 'Grand Hotel', cursive;
+    padding: 20px 0px;
+    color: white;
+}
+.home-bg .home-text .home-pera {
+    padding-bottom: 35px;
+}
+.home-bg .home-text .home-pera p{
+    color: white;
+    line-height: 30px;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.home-bg .home-text .home-btn a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 550;
+    padding: 10px 45px;
+    background-color: white;
+    border-radius: 25px;
+    color: #e8565e;
+    text-transform: uppercase;
+}
+.home-bg .home-text .home-btn a:hover{
+    outline: 1px solid white;
+    transition: .5s all ease;
+    background-color: #e8565e;
+    color: white;
+
+}
+
+.up-btn{
+    position: fixed;
+    right: 20px;
+    bottom: 50px;
+    background-color: #e8565e;
+    padding: 10px 12px;
+    border-radius: 10px;
+    animation: up;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+    
+
+}
+.up-btn i{
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+@keyframes up {
+    0%{
+        bottom: 0;
+    }
+    50%{
+        bottom: 70px;
+    }
+    100%{
+        bottom: 0;
+    }
+}
+/*===========================
+ home section end here 
+==============================*/
+
+
+
+
+
+
+
+
+/*==============================
+ product section start here
+================================ */
+.product-section{
+    width: 100%;
+    height: auto;
+    padding: 90px 40px;
+    background: url('img/dish-back.png') no-repeat;
+    background-size: cover;
+}
+
+.product-section .product-head{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+.product-section .product-head h1{
+    color: #e8565e;
+    font-size: 95px;
+    font-family: 'Grand Hotel', cursive;
+    
+}
+.product-section .product-head p{
+    font-size: 20px;
+    line-height: 28px;
+    padding: 15px 0px;
+}
+.product-section .product-body{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.product-section .product-body .product-item{
+    padding: 70px 35px;
+    flex-basis: 32%;
+    text-align: center;
+}
+.product-section .product-body .product-item img{
+    width: 90%;
+}
+.product-section .product-body .product-item h1{
+    font-size: 60px;
+    font-weight: bold;
+    color: #e8565e;
+    font-family: 'Grand Hotel', cursive;
+    padding: 10px 0px;
+}
+.product-section .product-body .product-item p{
+    width: 100%;
+    font-size: 22px;
+    line-height: 28px;
+    padding: 5px 0px;
+}
+/*==============================
+ product section end here
+================================ */
+
+
+
+
+
+
+
+
+
+/*=================================
+ statistic section start here 
+=================================== */
+.statistic{
+    width: 100%;
+    height: auto;
+    padding: 90px 20px;
+    background: url('img/statistic.png') no-repeat;
+    background-size: cover;
+    
+}
+
+.statistic .statistic-head{
+    padding-top: 10px;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+}
+.statistic .statistic-head h1{
+    font-size: 95px;
+    font-family: 'Grand Hotel', cursive;
+}
+.statistic .statistic-head p{
+    line-height: 28px;
+    font-size: 22px;
+    padding: 15px 0px;
+}
+
+.statistic .statistic-body{
+    width: 100%;
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.statistic .statistic-body .statistic-item{
+    width: 270px;
+    height: 270px;
+    border: 4px dashed white;
+    border-radius: 300px;
+    position: relative;
+    margin: 30px;
+}
+.statistic .statistic-body .statistic-item .statistic-text{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   text-align: center;
+   color: white;
+}
+.statistic .statistic-body .statistic-item .statistic-text h1{
+    font-size: 50px;
+    font-weight: bold;
+}
+.statistic .statistic-body .statistic-item .statistic-text h2{
+    font-size: 35px;
+  
+}
+/*=================================
+ statistic section end here 
+=================================== */
+
+
+
+
+
+
+
+
+
+
+/*===========================
+ menu section start here 
+============================= */
+.menu-section{
+    width: 100%;
+    height: auto;
+    padding: 80px 20px;
+    background-color: #eee6cc;
+}
+
+.menu-section .menu-head{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px 0px;
+}
+.menu-section .menu-head h1{
+    font-size: 95px;
+    font-family: 'Grand Hotel', cursive;
+    font-weight: bold;
+    color:#ff4c55;
+}
+.menu-section .menu-head  p{
+    font-size: 24px;
+    line-height: 30px;
+}
+.menu-section .menu-body{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 40px;
+}
+
+.menu-section .menu-body .menu-item{
+    width: 40%;
+    margin: 30px 0px;
+    height: 150px;
+    display: flex;
+   
+}
+.menu-section .menu-body .menu-item .menu-img{
+    width: 60%;
+    padding-top: 10px;
+    padding-right: 30px;
+}
+.menu-section .menu-body .menu-item .menu-img img{
+    width: 100%;
+}
+.menu-section .menu-body .menu-item .menu-text h1{
+    padding-bottom: 10px;
+    font-size: 45px;
+    font-family: 'Grand Hotel', cursive;
+    font-weight: bold;
+    color: #ff4c55;
+}
+.menu-section .menu-body .menu-item .menu-text p{
+    color: gray;
+}
+/*===========================
+ menu section end here 
+============================= */
+
+
+
+
+
+
+
+
+
+
+/*===========================
+ about section start here 
+============================= */
+.about-section{
+    width: 100%;
+    height: 700px;
+    background-color: #faf5e4;
+ 
+}
+.about-section .about-img{
+    width: 50%;
+    height: 700px;
+    float: left;
+    
+
+}
+.about-section .about-img img{
+    width: 100%;
+    height: 100%;
+}
+.about-section .about-text{
+    width: 50%;
+    float: left;
+    padding: 250px 0px;
+    padding-left: 80px;
+}
+.about-section .about-text h1{
+    font-size: 80px;
+    font-weight: bold;
+    font-family: 'Grand Hotel', cursive;
+    color: #ff4c55;
+}
+.about-section .about-text p{
+    padding: 15px 0px;
+    font-size: 20px;
+    line-height: 28px;
+    padding-bottom: 30px;
+    width: 80%;
+}
+.about-section .about-text a{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 30px;
+    background-color: #ff4c55;
+    color: white;
+    border-radius: 50px;
+    text-transform: uppercase;
+}
+.about-section .about-text a:hover{
+    background-color: white;
+    outline: 1px solid #e8565e;
+    color: #e8565e;
+    transition: .5s all ease;
+}
+/*===========================
+ about section end here 
+============================= */
+
+
+
+
+
+
+
+
+
+/*==============================
+ packeg section start here 
+================================ */
+.packeg-menu{
+    width: 100%;
+    height: auto;
+    padding: 80px 40px;
+    background-color: #eee6cc;
+    padding-top: 30px;
+}
+
+.packeg-menu .packeg-head{
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 40px 0px;
+}
+.packeg-menu .packeg-head h1{
+    font-size: 95px;
+    font-family: 'Grand Hotel', cursive;
+    font-weight: bold;
+    color: #ff4c55;
+    padding-bottom: 15px;
+}
+
+.packeg-menu .packeg-head p{
+    font-size: 20px;
+    line-height: 28px;
+}
+.packeg-menu .packeg-body{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.packeg-menu .packeg-body .packeg-item{
+    width: 28%;
+    height: auto;
+    margin: 20px;
+    padding: 55px 10px 20px 10px;
+    border-radius: 20px;
+    text-align: center;
+    background-color: #faf5e4;
+}
+
+.packeg-menu .packeg-body .packeg-item .packeg-text{
+    padding-top: 35px;
+}
+.packeg-menu .packeg-body .packeg-item .packeg-text h1{
+    font-size: 40px;
+    font-family: 'Grand Hotel', cursive;
+    color: #ff4c55;
+}
+.packeg-menu .packeg-body .packeg-item .packeg-text p{
+    font-size: 18px;
+    line-height: 28px;
+    padding-top: 10px;
+    padding-bottom: 25px;
+    padding: 10px 7px 25px 7px;
+}
+
+.packeg-menu .packeg-body .packeg-item .packeg-text a{
+    font-size: 25px;
+    text-decoration: none;
+    padding: 10px 25px;
+    background-color: #ff4c55;
+    color: white;
+    border-radius: 30px;
+    display: block;
+    width: 95%;
+    margin: 0 auto;
+}
+.packeg-menu .packeg-body .packeg-item .packeg-text a:hover{
+    transition: .5s all ease;
+    color: #e8565e;
+    background-color: white;
+    outline: 1px solid #e8565e;
+}
+/*==============================
+ packeg section end here 
+================================ */
+
+
+
+
+
+
+
+
+
+/*============================
+ chef section start here 
+=============================== */
+.chef-section{
+    width: 100%;
+    height: auto;
+    padding: 70px 20px 0px 20px;
+ 
+ 
+}
+.chef-section .chef-item{
+    padding: 80px 0px 0px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.chef-section img{
+    width: 100%;
+}
+.chef-section .chef-back-img{
+    width: 100%;
+    
+}
+.chef-section .chef-img{
+    width: 30%;
+    margin: 0 auto;
+}
+.chef-section .chef-img img{
+    width: 100%;
+}
+.chef-section .chef-text{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 40px;
+
+}
+.chef-section .chef-text p{
+    padding-bottom: 15px;
+    font-size: 30px;
+    line-height: 35px;
+}
+.chef-section .chef-text h1{
+    padding-top: 15px;
+    font-size: 65px;
+    font-weight: bold;
+    font-family: 'Grand Hotel', cursive;
+    color: #ff4c55;
+}
+
+/*============================
+ chef section end here 
+=============================== */
+
+
+
+
+
+
+
+
+/*================================
+ subscribe section start here 
+================================== */
+.subscribe-section{
+    width: 100%;
+    height: auto;
+    padding: 60px 20px;
+    background-color: #eee6cc;
+}
+.subscribe-section .subscribe-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.subscribe-section .subscribe-item .subscribe-head h1{
+    font-size: 95px;
+    font-weight: bold;
+    font-family: 'Grand Hotel', cursive;
+    color: #ff4c55;
+    padding: 30px 0px;
+}
+.subscribe-section .subscribe-item .subscribe-pera {
+    text-align: center;
+}
+.subscribe-section .subscribe-item .subscribe-pera p{
+    width: 70%;
+    margin: 0 auto;
+    font-size: 25px;
+    line-height: 28px;
+    padding: 15px 0px;
+
+}
+.subscribe-section .subscribe-item .subscribe-input{
+    padding-top: 10px;
+    position: relative;
+}
+.subscribe-section .subscribe-item .subscribe-input input{
+    width: 500px;
+    height: 50px;
+    border: none;
+    border-radius: 40px;
+    padding: 0px 0px 0px 20px;
+   
+}
+.subscribe-section .subscribe-item .subscribe-input button{
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    padding: 15px 25px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #ff4c55;
+    color: white;
+    position: absolute;
+    top: 8px;
+    right: -20px;
+
+}
+
+/*================================
+ subscribe section end here 
+================================== */
+
+
+
+
+
+
+
+
+
+/*=================================
+ foooter section start here 
+================================= */
+footer{
+    width: 100%;
+    background-color: black;
+    padding: 90px 0px;
+}
+
+.footer-body{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.footer-body .footer-item{
+    width: 16%;
+    color: white;
+}
+.footer-body .footer-item p i{
+    color: black;
+    border-radius: 100px;
+    padding: 5px;
+    margin: 5px;
+    background-color: rgb(234, 234, 234);
+}
+.footer-body .footer-item h1{
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'Grand Hotel', cursive;
+    padding-bottom: 10px;
+}
+.footer-body .footer-item p{
+
+    padding: 5px 0px;
+}
+.footer-body .footer-item a{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 15px 0px;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+}
+.footer-body .footer-item a:hover{
+    color: #e8565e;
+    margin-left: 5px;
+    transition:  .5s all ease;
+}
+.footer-body .footer-item1{
+    width: 28%;
+    color: white;
+  
+}
+.footer-body .footer-item1 h1{
+    font-size: 40px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    font-family: 'Grand Hotel', cursive;
+}
+.footer-body .footer-item1 p{
+    padding: 5px 0px;
+    font-size: 18px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.footer-body .footer-item1 a{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 15px 0px;
+    color: white;
+}
+/*=================================
+ foooter section end here 
+================================= */

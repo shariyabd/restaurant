@@ -1,0 +1,503 @@
+
+
+
+/*=============================
+ navbar section start here 
+=============================== */
+@media screen and (max-width:600px){
+    .home-bg nav{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 80px;
+        padding: 20px 20px;
+        flex-direction: row;
+        background-color: #d6434b;
+        z-index: 9999;
+    }
+    .side-bar{
+        display: block;
+        font-size: 30px;
+        color: white;
+        padding: 10px 20px;
+    }
+    .side-bar i.active::before{
+        content: "\f00d";
+    }
+    .home-bg nav .logo img{
+       width: 80%;
+    }
+    .home-bg nav .nav-item {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        width: 70%;
+        height: 100vh;
+        background-color: #d6434b;
+        z-index: 9999;
+        transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+        
+    }
+    .home-bg nav .nav-item.active{
+        left: 0;
+    }
+      .home-bg nav .nav-item  li{
+          display: block;
+          padding: 15px 0px;
+      }
+      .home-bg nav .nav-item  li a{
+          display: block;
+      }
+    
+}
+@media screen and (max-width:500px){
+    .home-bg nav{
+        padding: 20px 10px;
+        
+    }
+}
+/*=============================
+ navbar section end here 
+=============================== */
+
+
+
+
+
+
+
+/*===============================
+ home section start here 
+============================== */
+@media screen and (max-width:600px){
+    .home-bg .home-text{
+        padding-top: 90px;
+        width: 80%;
+        
+    }
+}
+@media screen and (max-width:500px){
+    .home-bg .home-text .home-head h1{
+        font-size: 80px;
+    }
+    .home-bg .home-text .home-pera p{
+        font-size: 17px;
+
+    }
+    .home-bg .home-text .home-btn a{
+        font-size: 15px;
+        padding: 10px 35px;
+    }
+}
+/*===============================
+ home section end here 
+============================== */
+
+
+
+
+
+
+
+
+
+/*================================
+ product section start here 
+=================================== */
+@media screen and (max-width:800px){
+    .product-section .product-head{
+        width: 70%;
+    }
+    .product-section .product-body .product-item{
+        flex-basis: 45%;
+        margin: 5px;
+       
+    }
+}
+@media screen and (max-width:600px){
+    .product-section{
+        padding: 90px 20px;
+    }
+    .product-section .product-head{
+        width: 95%;
+    }
+    .product-section .product-head h1{
+        color: #e8565e;
+        font-size: 55px;
+       
+    }
+    .product-section .product-head p{
+        font-size: 17px;
+    }
+    .product-section .product-body .product-item{
+        flex-basis: 100%;
+        padding: 70px 15px;
+    }
+
+    .product-section .product-body .product-item h1{
+        font-size: 45px;
+    }
+    .product-section .product-body .product-item p{
+       
+        font-size: 18px;
+    }
+    
+}
+
+/*================================
+ product section end here 
+=================================== */
+
+
+
+
+
+
+
+
+
+/*=================================
+ statistic section start here 
+================================= */
+@media screen and (max-width:500px){
+    .statistic .statistic-head{
+        
+        width: 95%;
+      
+    }
+    .statistic .statistic-head h1{
+        font-size: 55px;
+       
+    }
+    .statistic .statistic-head p{
+       
+        font-size: 18px;
+        
+    }
+    .statistic .statistic-body .statistic-item{
+        margin: 10px 0px;
+    }
+    .statistic .statistic-body .statistic-item .statistic-text h1{
+        font-size: 40px;
+        
+    }
+    .statistic .statistic-body .statistic-item .statistic-text h2{
+        font-size: 25px;
+      
+    }
+}
+/*=================================
+ statistic section end here 
+================================= */
+
+
+
+
+
+
+
+
+
+/*================================
+ menu section start here 
+================================= */
+@media screen and (max-width:750px){
+    .menu-section .menu-body .menu-item{
+        width: 50%;
+        margin: 30px 0px;
+        height: 150px;
+        display: flex;
+       
+    }
+    
+}
+
+@media screen and (max-width:600px){
+    
+    .menu-section{
+        
+        padding: 80px 10px;
+        
+    }
+    .menu-section .menu-head{
+        width: 95%;
+        
+    }
+    .menu-section .menu-head h1{
+        font-size: 55px;
+    }
+    .menu-section .menu-head  p{
+        font-size: 19px;
+     
+    }
+ 
+    .menu-section .menu-body .menu-item{
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+      
+    }
+    .menu-section .menu-body .menu-item .menu-img{
+        width: 20%;
+       
+    }
+    .menu-section .menu-body .menu-item .menu-img img{
+        width: 100%;
+    }
+    .menu-section .menu-body .menu-item .menu-text h1{
+        font-size: 35px;
+    }
+    .menu-section .menu-body .menu-item .menu-text p{
+        color: gray;
+    }
+}
+/*================================
+ menu section end here 
+================================= */
+
+
+
+
+
+
+
+
+
+
+/*===============================
+ about section start here 
+================================= */
+@media screen and (max-width:700px){
+    .about-section .about-img{
+        width: 100%;
+        height:500px;
+      
+    }
+    
+.about-section{
+ 
+    height: 800px;
+
+ 
+}
+    .about-section .about-text{
+        width: 100%;
+        padding: 30px 30px;
+        
+    }
+}
+@media screen and (max-width:500px){
+    .about-section .about-text{
+        width: 100%;
+    }
+    .about-section .about-text h1{
+        font-size: 55px;
+    }
+    .about-section .about-text p{
+        font-size: 15px;
+        width: 100%;
+    }
+    .about-section .about-text a{
+        font-size: 15px;
+        font-weight: bold;
+        padding: 10px 20px;
+    }
+}
+@media screen and (max-width:350px){
+    .about-section{
+ 
+        height: 900px;
+    
+     
+    }
+}
+
+/*===============================
+ about section end here 
+================================= */
+
+
+
+
+
+
+
+
+
+
+/*================================
+ packeg section start here 
+================================== */
+@media screen and (max-width:850px){
+    .packeg-menu .packeg-body .packeg-item{
+        width: 40%;
+    }
+}
+@media screen and (max-width:600px){
+
+    .packeg-menu{
+       
+        padding: 80px 10px;
+       
+    }
+    .packeg-menu .packeg-head h1{
+        font-size: 55px;
+    }
+    
+    .packeg-menu .packeg-head p{
+        font-size: 18px;
+    }
+    .packeg-menu .packeg-body .packeg-item{
+        width: 90%;
+    }
+    .packeg-menu .packeg-body .packeg-item .packeg-text h1{
+        font-size: 30px;
+    }
+    .packeg-menu .packeg-body .packeg-item .packeg-text p{
+        font-size: 15px;
+
+    }
+    .packeg-menu .packeg-body .packeg-item .packeg-text a{
+        font-size: 20px;
+        text-decoration: none;
+        padding: 10px 20px;
+    }
+}
+
+/*================================
+ packeg section end here 
+================================== */
+
+
+
+
+
+
+
+
+
+
+/*===============================
+ chef section start here 
+================================= */
+@media screen and (max-width:500px){
+    .chef-section .chef-img{
+        width: 70%;
+        margin: 0 auto;
+    }
+   
+    .chef-section .chef-text{
+        width: 100%;
+    
+    }
+    .chef-section .chef-text p{
+        font-size: 20px;
+       
+    }
+    .chef-section .chef-text h1{
+      
+        font-size: 45px;
+    }
+    
+}
+/*===============================
+ chef section end here 
+================================= */
+
+
+
+
+
+
+
+
+
+/*===============================
+ subscribe section start here 
+================================= */
+@media screen and (max-width:550px){
+    .subscribe-section .subscribe-item .subscribe-head h1{
+        font-size: 55px;
+    }
+    .subscribe-section .subscribe-item .subscribe-pera p{
+        width: 90%;
+        font-size: 18px;
+    
+    }
+    .subscribe-section .subscribe-item .subscribe-input input{
+        max-width: 350px;
+       
+    }
+    .subscribe-section .subscribe-item .subscribe-input button{
+        padding: 15px 20px;
+        font-size: 15px;
+        height: 50px;
+    
+    }
+    
+}
+
+@media screen and (max-width:350px){
+    .subscribe-section .subscribe-item .subscribe-input input{
+        max-width: 250px;
+       
+    }
+    .subscribe-section .subscribe-item .subscribe-input button{
+        padding: 15px 15px;
+        
+    
+    }
+}
+/*===============================
+ subscribe section end here 
+================================= */
+
+
+
+
+
+
+
+
+
+/*===============================
+ footer section start here 
+================================== */
+@media screen and (max-width:950px){
+    .footer-body .footer-item1{
+        width: 35%;
+        color: white;
+      
+    }
+    .footer-body .footer-item{
+        width: 30%;
+        color: white;
+    }
+}
+
+@media screen and (max-width:700px){
+    .footer-body .footer-item1{
+        width: 50%;
+        color: white;
+      
+    }
+    .footer-body .footer-item{
+        width: 45%;
+        color: white;
+    }
+}
+@media screen and (max-width:500px){
+    .footer-body .footer-item1{
+        width: 90%;
+        color: white;
+      
+    }
+    .footer-body .footer-item{
+        width: 90%;
+        color: white;
+    }
+}
+
+/*===============================
+ footer section end here 
+================================== */
